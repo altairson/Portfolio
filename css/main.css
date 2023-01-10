@@ -11,13 +11,13 @@ li.tab {
     width: 10px;
     height: 10px;
     display: block;
-    border: 1px solid gray;
+    border: 1px solid indianred;
     margin: 10px;
     border-radius: 50%;
 }
 
 li.tab.selected {
-    background-color: #333;
+    background-color: indianred;
 }
 
 .logo img {
@@ -45,8 +45,7 @@ body {
         'footer';
     grid-template-rows: 50px calc(100vh - 100px) 50px;
     height: 100vh;
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgb(155 155 155) 0%, rgb(199 199 199) 50%, rgb(195 195 195) 100%);
+    background: #333;
 }
 
 nav button {
@@ -68,14 +67,19 @@ nav li {
 }
 
 nav li:hover {
-    background-color: #efefef;
+    background-color: #252525;
 }
 
 nav li.active {
-    box-shadow: inset 0px 0px 10px 0px white;
+    box-shadow: inset 0px 0px 10px 0px #222;
 }
 
-nav a {color: #333;text-decoration: none;display: flex;align-items: center;}
+li.nav-link.active a {
+    color: indianred;
+    font-weight: bold;
+}
+
+nav a {color: white;text-decoration: none;display: flex;align-items: center;}
 
 nav {
     display: flex;
@@ -83,7 +87,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 0 10px;
-    box-shadow: 0px 0px 5px 0px #7e7e7e;
+    box-shadow: 0px 0px 5px 0px black;
 }
 
 header {
@@ -101,7 +105,11 @@ main {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     grid-area: main;
-    color: #333;
+    color: white;
+}
+
+main h1 {
+    color: indianred;
 }
 
 footer {
@@ -111,8 +119,8 @@ footer {
     align-items: center;
     justify-content: center;
     background-color: #3333330f;
-    color: #333;
-    box-shadow: 0px 0px 5px 0px #787878;
+    color: white;
+    box-shadow: 0px 0px 5px 0px black;
 }
 
 section {
@@ -174,7 +182,7 @@ section {
 #text {
     width: 75%;
     position: relative;
-    color: #fff;
+    color: #262626;
     font-weight: 700;
     font-size: 12em;
     line-height: 0.9em;
@@ -188,7 +196,7 @@ section {
     position: absolute;
     top: 30px;
     left: -30px;
-    color: rgba(0,0,0, 0.3);
+    color: #242424;
     text-shadow: none;
     filter: blur(8px);
     z-index: -1;
