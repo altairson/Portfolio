@@ -27,7 +27,6 @@ li.tab.selected {
 
 .logos {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
@@ -193,5 +192,20 @@ section {
     text-shadow: none;
     filter: blur(8px);
     z-index: -1;
+}
+
+@media (max-width: 768px) {
+    #text {
+        font-size: 50px;
+    }
+    .card {
+        padding: 15px;
+    }
+    .logos {
+        flex-direction: column;
+    }
+    .logo img {
+        width: 100px;
+    }
 }
 
