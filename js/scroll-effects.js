@@ -1,5 +1,25 @@
 $(document).ready(function() {
 
+    var backgroundTexts = [
+        'You are awesome !',
+        'Discover yourself!',
+        'Pricing',
+        'About us'
+    ];
+
+    function animateText(txt) {
+        var text = $('#text')[0];
+        text.innerHTML = txt;
+        var shadow = '';
+        for(var i = 0; i < 25; i++) { 
+            shadow += (shadow ? ',' : '') + -i * 1 + 'px ' + i * 1 + 'px 0 #444';
+        }
+        text.style.textShadow = shadow;
+    }
+
+    animateText(backgroundTexts[0]);
+
+
     $(".nav-link").click(function(e) {
         e.preventDefault();
         this.children[0].click();
@@ -22,6 +42,8 @@ $(document).ready(function() {
         if(n == 3) {
             $('.logo').addClass("show");
         }
+        let x = $('.active').index();
+        animateText(backgroundTexts[x]);
     });
     
 
@@ -31,6 +53,7 @@ $(document).ready(function() {
         var scrollbarLocation = $(this).scrollTop();
         scrollLink.each(function() {
             let n = this.hash == '#first' ? 0 : this.hash == '#second' ? 1 : this.hash == '#third' ? 2 : 3;
+            
             let topScroll = n * $('body').height() - 500;
             if ( topScroll < scrollbarLocation ) {
                 $(this).parent().addClass('active');
@@ -43,6 +66,8 @@ $(document).ready(function() {
                     $('.logo').addClass("show");
                 }
             }
+            let x = $('.active').index();
+            animateText(backgroundTexts[x]);
         })
     })
 })

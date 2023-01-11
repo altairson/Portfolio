@@ -7,6 +7,43 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.content button.discover {
+    height: 35px;
+    width: 80px;
+    border-radius: 5px;
+    border: 1px solid indianred;
+    background-color: indianred;
+    color: white;
+    cursor: pointer;
+}
+
+.content input.date {
+    height: 35px;
+    width: auto;
+    border: 1px solid indianred;
+    border-radius: 5px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.content select {
+    border: 1px solid indianred;
+    color: indianred;
+    padding: 5px;
+    width: 100px;
+    border-radius: 5px;
+    margin-right: 20px;
+    height: 35px;
+}
+
 li.tab {
     width: 10px;
     height: 10px;
@@ -72,7 +109,7 @@ nav li {
     display: flex;
     align-items: center;
     cursor: pointer;
-    width: 90px;
+    width: 100px;
 }
 
 nav li:hover {
@@ -148,7 +185,8 @@ section {
     opacity: 0;
     transform: translateX(-100%);
     transition: all 1s;
-    padding: 10px;
+    padding: 100px;
+    background-color: #0000000d;
 }
 
 
@@ -191,26 +229,22 @@ section {
 
 #text {
     width: 75%;
-    position: relative;
+    position: absolute;
     color: #262626;
+    top: 0;
     font-weight: 700;
     font-size: 12em;
     line-height: 0.9em;
     letter-spacing: 2px;
     text-align: center;
-    transform: rotate(-28deg) skew(25deg);
+    transform: rotate(-28deg) skew(26deg);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: fit-content;
 }
 
-#text::before {
-    content: attr(data-text);
-    position: absolute;
-    top: 30px;
-    left: -30px;
-    color: #242424;
-    text-shadow: none;
-    filter: blur(8px);
-    z-index: -1;
-}
 
 .hidden {
     display: block;
