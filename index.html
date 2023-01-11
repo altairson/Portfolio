@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="./css/main.css">
 
-    <title>AltairSon</title>
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> <!-- jquery library -->
+    <script src="https://kit.fontawesome.com/61b7697622.js" crossorigin="anonymous"></script> <!-- icons library -->
+    <link rel="stylesheet" href="./css/main.css"><!-- css file -->
+
+    <title>Zodiac</title>
 </head>
 <body>
     <header>
         <nav>
             <a href="#"><img src="./media/logo.jpg" alt="logo"></a>
 
-            <div>
+            <div id="nav" class="hidden">
                 <ul>          
                     <li class="nav-link active">
                         <a class="scroll" href="#first">First</a>
@@ -31,7 +34,7 @@
                 </ul>
             </div>
 
-            <button type="button">test</button>
+            <button id="menu" type="button"><i class="fa-solid fa-bars"></i></button>
         </nav>
     </header>
     <main>
@@ -81,5 +84,6 @@
 
     <script src="./js/scroll-effects.js"></script>
     <script src="./js/text-animations.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>

@@ -50,6 +50,14 @@ body {
 
 nav button {
     display: none;
+    width: 40px;
+    background-color: #333;
+    color: white;
+    border: none;
+}
+
+button#menu:hover {
+    color: indianred;
 }
 
 nav ul {
@@ -60,10 +68,11 @@ nav ul {
 nav li {
     list-style: none;
     height: 50px;
-    padding: 0 10px;
+    padding: 0 13px;
     display: flex;
     align-items: center;
     cursor: pointer;
+    width: 90px;
 }
 
 nav li:hover {
@@ -71,7 +80,7 @@ nav li:hover {
 }
 
 nav li.active {
-    box-shadow: inset 0px 0px 10px 0px #222;
+    box-shadow: inset 0px -2px 0px 0px indianred;
 }
 
 li.nav-link.active a {
@@ -79,7 +88,7 @@ li.nav-link.active a {
     font-weight: bold;
 }
 
-nav a {color: white;text-decoration: none;display: flex;align-items: center;}
+nav a {color: white;text-decoration: none;display: flex;align-items: baseline;}
 
 nav {
     display: flex;
@@ -95,6 +104,7 @@ header {
     top: 0;
     width: 100vw;
     grid-area: header;
+    z-index: 1;
 }
 
 main::-webkit-scrollbar {
@@ -202,6 +212,10 @@ section {
     z-index: -1;
 }
 
+.hidden {
+    display: block;
+}
+
 @media (max-width: 768px) {
     #text {
         font-size: 50px;
@@ -214,6 +228,27 @@ section {
     }
     .logo img {
         width: 100px;
+    }
+
+    nav button {
+        display: block;
+    }
+
+    nav div {
+        position: fixed;
+        top: 0;
+        right: 0;
+        margin-top: 40px;
+        background-color: #333;
+        box-shadow: -2px 2px 4px -2px black;
+    }
+
+    nav div ul {
+        flex-direction: column;
+    }
+
+    .hidden {
+        display: none;
     }
 }
 
