@@ -29,9 +29,9 @@
 .content {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
     padding: 20px;
+    align-items: center;
 }
 
 .content select {
@@ -255,8 +255,25 @@ section {
         font-size: 50px;
     }
     .card {
-        padding: 15px;
+        padding: 50px;
     }
+
+    .content {
+        flex-direction: column;
+    }
+    .content select {
+        margin: 10px 0 !important;
+    }
+
+    .content input {
+        margin: 10px 0 !important;
+    }
+
+    .content button {
+        margin: 10px 0 !important;
+    }
+
+    
     .logos {
         flex-direction: column;
     }
