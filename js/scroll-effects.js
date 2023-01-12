@@ -9,10 +9,11 @@ $(document).ready(function() {
 
     function animateText(txt) {
         var text = $('#text')[0];
+        var color = $('body').hasClass('theme-dark') ? 'indianred' : 'indianred';
         text.innerHTML = txt;
         var shadow = '';
         for(var i = 0; i < 25; i++) { 
-            shadow += (shadow ? ',' : '') + -i * 1 + 'px ' + i * 1 + 'px 0 #444';
+            shadow += (shadow ? ',' : '') + -i * 1 + 'px ' + i * 1 + 'px 0 ' + color;
         }
         text.style.textShadow = shadow;
     }

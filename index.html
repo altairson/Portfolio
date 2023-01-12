@@ -12,7 +12,7 @@
 
     <title>Zodiac</title>
 </head>
-<body>
+<body class="theme-dark">
     <header>
         <nav>
             <a href="#"><img src="./media/logo.jpg" alt="logo"></a>
@@ -50,7 +50,7 @@
         <section id="first">
             <div class="card show">
                 <h1>Find Your Future in the Stars!</h1>
-                <p>Discover the secrets of the stars and unlock the power of astrology with <b>Myzodiac</b>. Explore the unique characteristics and traits of each zodiac sign and learn how the positions of the planets at the time of your birth shape your personality. From in-depth analysis of compatibility to tips for making important life decisions, <b>Myzodiac</b> has everything you need to master the art of astrology and live your best life.</p>
+                <p>Discover the secrets of the stars and unlock the power of astrology with <b>myzodiac.com</b> Explore the unique characteristics and traits of each zodiac sign and learn how the positions of the planets at the time of your birth shape your personality. From in-depth analysis of compatibility to tips for making important life decisions, <b>myzodiac.com</b> has everything you need to master the art of astrology and live your best life.</p>
             </div>
         </section>
     
@@ -76,7 +76,7 @@
                 <h1>Selects option that suits you the best!</h1>
                 <div class="content">
                     <div class="price-card">
-                        <h1>Basic</h1>
+                        <h2>Basic</h2>
                         <table>
                             <tr>
                                 <td>Personal feedback</td><td><i class="fa-solid fa-check"></i></td>
@@ -91,10 +91,10 @@
                                 <td>option 4</td><td><i class="fa-solid fa-xmark"></i></td>
                             </tr>
                         </table>
-                        <button class="btn">Select</button>
+                        <button id="basicBtn" class="btn">Select</button>
                     </div>
                     <div class="price-card">
-                        <h1>Popular</h1>
+                        <h2>Popular</h2>
                         <table>
                             <tr>
                                 <td>Personal feedback</td><td><i class="fa-solid fa-check"></i></td>
@@ -109,10 +109,10 @@
                                 <td>option 4</td><td><i class="fa-solid fa-xmark"></i></td>
                             </tr>
                         </table>
-                        <button class="btn">Select</button>
+                        <button id="popularBtn" class="btn">Select</button>
                     </div>
                     <div class="price-card">
-                        <h1>Premium</h1>
+                        <h2>Premium</h2>
                         <table>
                             <tr>
                                 <td>Personal feedback</td><td><i class="fa-solid fa-check"></i></td>
@@ -127,7 +127,7 @@
                                 <td>option 4</td><td><i class="fa-solid fa-check"></i></td>
                             </tr>
                         </table>
-                        <button class="btn">Select</button>
+                        <button id="premiumBtn" class="btn">Select</button>
                     </div>
                 </div>
             </div>
@@ -146,7 +146,16 @@
         </section>
     </main>
     <footer>
-        <p>LTD MyZodiac: all right reserved.</p>
+        <div class="content">
+            <div class="theme">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="copyright">© 2023 <b>myzodiac.com</b> all rights reserved.</div>
+            <div class="lang">EN</div>
+        </div>
     </footer>
 
     <script src="./js/scroll-effects.js"></script>
