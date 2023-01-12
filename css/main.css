@@ -7,14 +7,24 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.content button.discover {
-    height: 35px;
-    width: 80px;
+.price-card table tr {
+    border: 1px solid red;
+}
+
+.price-card table td {padding: 5px;}
+
+.price-card {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3333338f;
+    margin: 10px;
+    box-shadow: 0px 0px 10px black;
     border-radius: 5px;
-    border: 1px solid indianred;
-    background-color: indianred;
-    color: white;
-    cursor: pointer;
+}
+
+.content button.discover {
 }
 
 .content input.date {
@@ -245,9 +255,36 @@ section {
     height: fit-content;
 }
 
+.btn {
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px #333;
+    background-color: indianred;
+}
+
+.btn:hover {
+    box-shadow: 0px 0px 15px indianred;
+}
+
+.price-card:hover {
+    box-shadow: 0px 0px 15px 0px indianred;
+}
+
 
 .hidden {
     display: block;
+}
+
+.fa-check {
+    color: green;
+}
+
+.fa-xmark {
+    color: indianred;
 }
 
 @media (max-width: 768px) {
