@@ -21,4 +21,25 @@ $(document).ready(function() {
             $('body').toggleClass('theme-light');
         }
     }
+
+    function toggleSkillProgress(index) {
+        let progresses = [70, 100, 80, 95, 75, 80, 65, 85, 60, 90, 100, 80];
+        let progs = $('.progress');
+        let difference = 10 * (index * -1);
+        for(let i = 0; i < progs.length; i++) {
+            progs[i].children[0].style.width = progresses[i] + difference + '%';
+            progs[i].children[1].innerHTML = progresses[i] + difference + '%';
+        }
+
+    }
+
+    toggleSkillProgress(0);
+
+
+    $('.toggle div').click(function() {
+        $('.active').removeClass('active');
+        $(this).addClass('active');
+        toggleSkillProgress($(this).index());
+    })
+
 });

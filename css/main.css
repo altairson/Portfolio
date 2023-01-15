@@ -40,6 +40,87 @@
     font-family: 'Rowdies', cursive;
 }
 
+.toggle {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: fit-content;
+    padding: 3px !important;
+    border-radius: 20px;
+    background-color: #111;
+}
+
+.toggle div {
+    width: 200px;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    cursor: pointer;
+}
+
+.toggle div.active {
+    background-color: var(--td-primary);
+    color: var(--td-text);
+    border-radius: 20px;
+}
+
+.actual {
+}
+
+.wit {
+}
+
+.wot {
+    margin: 0px 3px;
+}
+
+.theme-dark .html p {
+    color: white;
+}
+
+.theme-dark .css p {
+    color: white;
+}
+
+.theme-dark .js p {
+    color: white;
+}
+
+.theme-dark h3 {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid var(--td-secondary);
+    margin-bottom: 10px;
+    color: var(--td-secondary);
+    padding-bottom: 5px;
+}
+
+.cont input[type="checkbox"] {
+}
+
+.cont li {
+    display: grid;
+    grid-template-areas:
+        'checkbox name progress';
+    grid-template-columns: 10% 20% auto;
+    align-items: center;
+    width: 90%;
+}
+
+.cont ul {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+cont ul {
+    display: flex;
+    flex-direction: column;
+}
+
 
 .price-card table tr {
     border: 1px solid red;
@@ -166,10 +247,39 @@ li.tab {
     height: 100%;
     background-color: #00000033;
     box-shadow: 0px 0px 10px 0px black;
+    display: grid;
+    grid-template-areas:
+        'header'
+        'skills'
+        'footer';
+    grid-template-rows: 40px auto 40px;
+    align-items: center;
+    justify-content: center;
 }
 
 .tools div {
     padding: 10px;
+}
+
+.toggle div {
+}
+
+.progress div {
+    background: linear-gradient(90deg, rgb(241 111 82) 0%, rgb(255 255 255) 100%);
+    height: 5px;
+    border-top-right-radius: 2px;
+    padding: 0;
+    border-bottom-right-radius: 2px;
+}
+
+.theme-dark .progress {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3px !important;
+    padding: 0;
+    margin: 0;
 }
 
 .skills {
@@ -546,6 +656,13 @@ theme-dark #text {
   .theme-dark b {
     border-bottom: 1px solid var(--td-secondary);
   }
+
+.progress b {
+    position: relative;
+    margin-right: -50px;
+    border: none;
+    font-size: 12px;
+}
 
 b {
     padding: 2px;
