@@ -463,7 +463,6 @@ section {
 }
 
 .theme-dark .card {
-    background-color: var(--td-transparent);
 }
 
 .theme-light .card {
