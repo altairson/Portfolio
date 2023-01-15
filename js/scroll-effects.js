@@ -1,10 +1,10 @@
 $(document).ready(function() {
 
     var backgroundTexts = [
-        'You are awesome !',
-        'Discover yourself!',
-        'Pricing',
-        'About us'
+        'I am who I am!',
+        'I do what I do',
+        'I have done... not much :/',
+        'Lets talk about it.'
     ];
 
     function animateText(txt) {
